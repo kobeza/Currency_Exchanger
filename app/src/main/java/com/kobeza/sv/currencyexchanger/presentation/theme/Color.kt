@@ -1,4 +1,4 @@
-package com.kobeza.sv.currencyexchanger.ui.theme
+package com.kobeza.sv.currencyexchanger.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.kobeza.sv.currencyexchanger.ui.theme
+package com.kobeza.sv.currencyexchanger.presentation.theme
 
 import android.app.Activity
 import android.os.Build
