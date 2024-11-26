@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Currency Exchanger</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="currency_converted">Currency converted!</string>
+    <string name="currency_exchange">Currency Exchange</string>
+    <string name="submit">SUBMIT</string>
+    <string name="oops">Ooops!</string>
+    <string name="retry">Retry</string>
+    <string name="done">Done</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="my_balances">MY BALANCES</string>
+    <string name="sell">SELL</string>
+    <string name="buy">BUY</string>
+    <string name="operation_type">Operation type</string>
+    <string name="success_dialog_description">You have converted %s to %s.</string>
+    <string name="success_dialog_description_commission">Commission fee:%s</string>
 </resources>
