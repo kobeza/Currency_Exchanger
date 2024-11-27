@@ -11,6 +11,10 @@ composeBom = "2024.11.00"
 retrofit = "2.11.0"
 hilt = "2.51.1"
 okhttp3 = "4.10.0"
+mockk = "1.13.13"
+kotlin-test = "1.8.22"
+kotlinx-coroutines-test = "1.7.3"
+turbine = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,6 +38,10 @@ okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okht
 okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android" , version.ref = "hilt"}
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hilt"}
+mockk = { group = "io.mockk", name = "mockk" , version.ref = "mockk"}
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test" , version.ref = "kotlin-test"}
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test" , version.ref = "kotlinx-coroutines-test"}
+turbine = { group = "app.cash.turbine", name = "turbine" , version.ref = "turbine"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -97,7 +97,8 @@ class MainViewModel @Inject constructor(
     private fun preCalculateExchange() {
         with(state.value) {
             val convertedAmount = convertToAmount(amountToSell) ?: return
-            val currentAmount = fakeBalanceRemoteStorage.getOrDefault(currencyToSell, DEFAULT_DOUBLE)
+            val currentAmount =
+                fakeBalanceRemoteStorage.getOrDefault(currencyToSell, DEFAULT_DOUBLE)
             val isExchangeButtonActive =
                 currentAmount + getCommission(currentAmount) >= convertedAmount
             val rate = currencyRates[currencyToBuy]
@@ -195,9 +196,15 @@ class MainViewModel @Inject constructor(
             val amountReceived = convertedAmount * rate
             val commission = getCommission(originalAmount)
             fakeBalanceRemoteStorage[currencyToSell] =
-                fakeBalanceRemoteStorage.getOrDefault(currencyToSell, DEFAULT_DOUBLE) - (originalAmount + commission)
+                fakeBalanceRemoteStorage.getOrDefault(
+                    currencyToSell,
+                    DEFAULT_DOUBLE
+                ) - (originalAmount + commission)
             fakeBalanceRemoteStorage[currencyToBuy] =
-                fakeBalanceRemoteStorage.getOrDefault(currencyToBuy, DEFAULT_DOUBLE) + amountReceived
+                fakeBalanceRemoteStorage.getOrDefault(
+                    currencyToBuy,
+                    DEFAULT_DOUBLE
+                ) + amountReceived
             _state.update {
                 it.copy(
                     balance = fakeBalanceRemoteStorage.map {
